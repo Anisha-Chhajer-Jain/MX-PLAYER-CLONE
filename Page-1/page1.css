@@ -1,0 +1,613 @@
+body {
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  background: linear-gradient(to bottom, #000, #111);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+/* Join MX Gold Button */
+.join-btn {
+  background: linear-gradient(to right, #d6a63b, #e0b94f);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.join-btn:hover {
+  opacity: 0.9;
+}
+
+/* Home Icon */
+.home-icon {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Menu Links */
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #e0b94f;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 5px 10px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+/* Search Icon */
+.search-icon {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Upgrade Button */
+.upgrade-btn {
+  background: transparent;
+  color: #e0b94f;
+  border: 1px solid #e0b94f;
+  border-radius: 50px;
+  padding: 5px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.upgrade-btn:hover {
+  background-color: #e0b94f;
+  color: black;
+}
+.search-bar {
+  display: flex;
+  background-color: #334155;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 60%;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.search-bar button {
+  background-color: #3b82f6;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Menu Icon */
+.menu-icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+h2{
+    padding: 10px;
+}
+
+.container {
+  max-width: 900px;
+  /* margin: 10px auto; */
+  padding: 20px;
+}
+
+nav {
+  color: #888;
+  font-size: 14px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #888;
+}
+
+nav span {
+  color: #fff;
+}
+
+.movie-info h1 {
+  font-size: 38px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.meta {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  color: #aaa;
+}
+
+.rating {
+  border: 1px solid #888;
+  border-radius: 5px;
+  padding: 3px 7px;
+  font-weight: bold;
+}
+
+.actions {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #777;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.gold {
+  background: linear-gradient(45deg, gold, goldenrod);
+  color: #000;
+  font-weight: bold;
+  border: none;
+}
+
+.movie-info h2 {
+  font-size: 28px;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.movie-info p {
+  line-height: 1.6;
+  font-size: 15px;
+  color: #ccc;
+}
+
+.description {
+  margin-top: 15px;
+  color: #bbb;
+  font-size: 15px;
+}
+
+
+/* body {
+  margin: 0;
+  background-color: #0e0e0e;
+  color: #ddd;
+  font-family: "Segoe UI", Arial, sans-serif;
+} */
+
+.footer {
+  background: #0f0f0f;
+  padding: 40px 60px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  border-bottom: 1px solid #222;
+  padding-bottom: 25px;
+}
+
+.footer-column h3 {
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  margin: 5px 0;
+  color: #bbb;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-column p:hover {
+  color: #fff;
+}
+
+.expand {
+  text-align: center;
+  color: #00aaff;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-mid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  border-bottom: 1px solid #222;
+  padding: 30px 0;
+  flex-wrap: wrap;
+}
+
+.mid-col {
+  flex: 1;
+  min-width: 250px;
+}
+
+.mid-col h3 {
+  color: #fff;
+  font-size: 16px;
+}
+
+.mid-col p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.left-section {
+  flex: 1.5;
+  min-width: 250px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 30px;
+}
+
+.mx {
+  height: 28px;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.mid-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.mid-section h3, .right-section h3 {
+  color: #fff;
+}
+
+.mid-section p {
+  font-size: 14px;
+  color: #bbb;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.mid-section p:hover {
+  color: #fff;
+}
+
+.right-section {
+  flex: 1.5;
+  min-width: 250px;
+}
+
+.right-section p {
+  font-size: 14px;
+  color: #bbb;
+  margin: 5px 0;
+}
+
+.qr {
+  margin-top: 10px;
+  width: 120px;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+body-1 {
+  background-color: #0f0f0f;
+  color: #fff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140vh;
+}
+
+.video-player {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+}
+.video-player img{
+    width: 100%;
+}
+.video-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.video-title h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.rating {
+  background-color: #333;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.duration {
+  margin-left: auto;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress {
+  width: 30%;
+  height: 100%;
+  background-color: #007bff;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.controls mi
+
+.more {
+  font-weight:bold;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.more i {
+  margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+.bindiya{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+}
+.bindiya img{
+    height: 100px;
+    border-radius: 5%;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design for screens below 600px */
+@media (max-width: 600px) {
+
+  /* Navbar adjustments */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .menu a {
+    display: block;
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .right-section {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  /* Movie info adjustments */
+  .container {
+    padding: 15px;
+  }
+
+  .movie-info h1 {
+    font-size: 26px;
+  }
+
+  .movie-info h2 {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .meta {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Footer adjustments */
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-mid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Video player responsiveness */
+  .video-player {
+    padding: 10px;
+  }
+
+  .video-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .video-title h2 {
+    font-size: 18px;
+  }
+
+  .duration {
+    margin-left: 0;
+    font-size: 13px;
+  }
+
+  /* Image section */
+  .bindiya {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .bindiya img {
+    height: 80px;
+  }
+}
